@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ectoolkit' target in the 'ectoolkit' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
