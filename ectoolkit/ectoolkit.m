@@ -7,7 +7,3 @@
 //
 
 #import "ectoolkit.h"
-
-@implementation ectoolkit
-
-@end
