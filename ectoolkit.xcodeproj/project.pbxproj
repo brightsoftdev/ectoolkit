@@ -13,6 +13,10 @@
 		F80E50F41585932E00443ECE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ED8BB815821ABC009ECF13 /* SystemConfiguration.framework */; };
 		F80E50F51585933500443ECE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ED8BB615821AB4009ECF13 /* CFNetwork.framework */; };
 		F80E50F61585933E00443ECE /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ED8BC015821AE4009ECF13 /* libz.1.2.5.dylib */; };
+		F8AD947415889147007B3C87 /* JTListView.h in Headers */ = {isa = PBXBuildFile; fileRef = F8AD947215889147007B3C87 /* JTListView.h */; };
+		F8AD947515889147007B3C87 /* JTListView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AD947315889147007B3C87 /* JTListView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8AD94781588A281007B3C87 /* ECTimeUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F8AD94761588A281007B3C87 /* ECTimeUtil.h */; };
+		F8AD94791588A281007B3C87 /* ECTimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AD94771588A281007B3C87 /* ECTimeUtil.m */; };
 		F8ED8AD11582104E009ECF13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ED8AD01582104E009ECF13 /* Foundation.framework */; };
 		F8ED8AD71582104E009ECF13 /* ectoolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = F8ED8AD61582104E009ECF13 /* ectoolkit.m */; };
 		F8ED8B7D15821656009ECF13 /* ECUIControlTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F8ED8B3F15821656009ECF13 /* ECUIControlTableViewCell.h */; };
@@ -71,6 +75,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F8AD947215889147007B3C87 /* JTListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTListView.h; sourceTree = "<group>"; };
+		F8AD947315889147007B3C87 /* JTListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTListView.m; sourceTree = "<group>"; };
+		F8AD94761588A281007B3C87 /* ECTimeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECTimeUtil.h; sourceTree = "<group>"; };
+		F8AD94771588A281007B3C87 /* ECTimeUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECTimeUtil.m; sourceTree = "<group>"; };
 		F8ED8ACD1582104E009ECF13 /* libectoolkit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libectoolkit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8ED8AD01582104E009ECF13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F8ED8AD41582104E009ECF13 /* ectoolkit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ectoolkit-Prefix.pch"; sourceTree = "<group>"; };
@@ -155,6 +163,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F8AD947115889147007B3C87 /* JTListView */ = {
+			isa = PBXGroup;
+			children = (
+				F8AD947215889147007B3C87 /* JTListView.h */,
+				F8AD947315889147007B3C87 /* JTListView.m */,
+			);
+			path = JTListView;
+			sourceTree = "<group>";
+		};
 		F8ED8AC21582104E009ECF13 = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +245,7 @@
 		F8ED8B4915821656009ECF13 /* openSource */ = {
 			isa = PBXGroup;
 			children = (
+				F8AD947115889147007B3C87 /* JTListView */,
 				F8ED8B4A15821656009ECF13 /* ASIHTTPRequest */,
 				F8ED8B6215821656009ECF13 /* JSONKit */,
 				F8ED8B6515821656009ECF13 /* MBProgressHUD */,
@@ -333,6 +351,8 @@
 				F8ED8B7A15821656009ECF13 /* NSString+CommonUtils.m */,
 				F8ED8B7B15821656009ECF13 /* UIColor+ECUIColor.h */,
 				F8ED8B7C15821656009ECF13 /* UIColor+ECUIColor.m */,
+				F8AD94761588A281007B3C87 /* ECTimeUtil.h */,
+				F8AD94771588A281007B3C87 /* ECTimeUtil.m */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -373,6 +393,8 @@
 				F8ED8BAC15821656009ECF13 /* HttpUtil.h in Headers */,
 				F8ED8BAE15821656009ECF13 /* NSString+CommonUtils.h in Headers */,
 				F8ED8BB015821656009ECF13 /* UIColor+ECUIColor.h in Headers */,
+				F8AD947415889147007B3C87 /* JTListView.h in Headers */,
+				F8AD94781588A281007B3C87 /* ECTimeUtil.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +474,8 @@
 				F8ED8BAD15821656009ECF13 /* HttpUtil.m in Sources */,
 				F8ED8BAF15821656009ECF13 /* NSString+CommonUtils.m in Sources */,
 				F8ED8BB115821656009ECF13 /* UIColor+ECUIColor.m in Sources */,
+				F8AD947515889147007B3C87 /* JTListView.m in Sources */,
+				F8AD94791588A281007B3C87 /* ECTimeUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

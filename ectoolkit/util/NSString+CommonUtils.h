@@ -26,4 +26,5 @@
 
 - (NSString *)trimPhoneNumberSeparator;
 
+- (NSString*)replaceString:(NSString*)source withTarget:(NSString*)target;
 @end

@@ -65,5 +65,10 @@
     return _ret;
 }
 
+- (NSString*)replaceString:(NSString *)source withTarget:(NSString *)target {
+    NSMutableString *mutableString = [[NSMutableString alloc] initWithUTF8String:[self UTF8String]];
+    [mutableString replaceCharactersInRange:[self rangeOfString:source] withString:target];
+    return mutableString;
+}
 
 @end
