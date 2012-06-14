@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "../openSource/ASIHttpRequest/ASIFormDataRequest.h"
 
 typedef enum {
     synchronous,

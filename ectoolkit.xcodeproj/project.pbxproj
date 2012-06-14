@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F8AC3E4A1589D27B00D8A9C9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AC3E491589D27B00D8A9C9 /* CoreFoundation.framework */; };
 		F8AC3E501589D27B00D8A9C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8AC3E4E1589D27B00D8A9C9 /* InfoPlist.strings */; };
-		F8AC3E9B1589D35500D8A9C9 /* ectoolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AC3E561589D35500D8A9C9 /* ectoolkit.m */; };
 		F8AC3E9C1589D35500D8A9C9 /* ECUIControlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AC3E591589D35500D8A9C9 /* ECUIControlTableViewCell.m */; };
 		F8AC3E9D1589D35500D8A9C9 /* UIView+UI+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AC3E5B1589D35500D8A9C9 /* UIView+UI+ViewController.m */; };
 		F8AC3E9E1589D35500D8A9C9 /* UIViewController+CompatibleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AC3E5D1589D35500D8A9C9 /* UIViewController+CompatibleView.m */; };
@@ -52,6 +51,13 @@
 		F8AC3EC41589D3D600D8A9C9 /* HttpUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F8AC3E951589D35500D8A9C9 /* HttpUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8AC3EC51589D3D600D8A9C9 /* NSString+CommonUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F8AC3E971589D35500D8A9C9 /* NSString+CommonUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8AC3EC61589D3D600D8A9C9 /* UIColor+ECUIColor.h in Headers */ = {isa = PBXBuildFile; fileRef = F8AC3E991589D35500D8A9C9 /* UIColor+ECUIColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8AC3ECC1589EC9100D8A9C9 /* ASIHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8AC3E6F1589D35500D8A9C9 /* ASIHTTPRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8AC3ECD1589ECED00D8A9C9 /* ASIHTTPRequestConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = F8AC3E711589D35500D8A9C9 /* ASIHTTPRequestConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8AC3ECE1589ED1200D8A9C9 /* ASIHTTPRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = F8AC3E721589D35500D8A9C9 /* ASIHTTPRequestDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8AC3ECF1589ED3600D8A9C9 /* ASIProgressDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = F8AC3E771589D35500D8A9C9 /* ASIProgressDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8AC3ED01589ED4700D8A9C9 /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = F8AC3E661589D35500D8A9C9 /* ASICacheDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8AC3ED51589F21000D8A9C9 /* UIViewController+Network.h in Headers */ = {isa = PBXBuildFile; fileRef = F8AC3ED31589F21000D8A9C9 /* UIViewController+Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8AC3ED61589F21000D8A9C9 /* UIViewController+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AC3ED41589F21000D8A9C9 /* UIViewController+Network.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +67,6 @@
 		F8AC3E4F1589D27B00D8A9C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F8AC3E511589D27B00D8A9C9 /* ectoolkit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ectoolkit-Prefix.pch"; sourceTree = "<group>"; };
 		F8AC3E551589D35500D8A9C9 /* ectoolkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ectoolkit.h; sourceTree = "<group>"; };
-		F8AC3E561589D35500D8A9C9 /* ectoolkit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ectoolkit.m; sourceTree = "<group>"; };
 		F8AC3E581589D35500D8A9C9 /* ECUIControlTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECUIControlTableViewCell.h; sourceTree = "<group>"; };
 		F8AC3E591589D35500D8A9C9 /* ECUIControlTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECUIControlTableViewCell.m; sourceTree = "<group>"; };
 		F8AC3E5A1589D35500D8A9C9 /* UIView+UI+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UI+ViewController.h"; sourceTree = "<group>"; };
@@ -119,6 +124,8 @@
 		F8AC3E981589D35500D8A9C9 /* NSString+CommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CommonUtils.m"; sourceTree = "<group>"; };
 		F8AC3E991589D35500D8A9C9 /* UIColor+ECUIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ECUIColor.h"; sourceTree = "<group>"; };
 		F8AC3E9A1589D35500D8A9C9 /* UIColor+ECUIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ECUIColor.m"; sourceTree = "<group>"; };
+		F8AC3ED31589F21000D8A9C9 /* UIViewController+Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Network.h"; sourceTree = "<group>"; };
+		F8AC3ED41589F21000D8A9C9 /* UIViewController+Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Network.m"; sourceTree = "<group>"; };
 		F8ED8AD01582104E009ECF13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F8ED8BB615821AB4009ECF13 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		F8ED8BB815821ABC009ECF13 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -144,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				F8AC3E551589D35500D8A9C9 /* ectoolkit.h */,
-				F8AC3E561589D35500D8A9C9 /* ectoolkit.m */,
 				F8AC3E571589D35500D8A9C9 /* ecui */,
 				F8AC3E621589D35500D8A9C9 /* openSource */,
 				F8AC3E8D1589D35500D8A9C9 /* user */,
@@ -177,6 +183,8 @@
 				F8AC3E5F1589D35500D8A9C9 /* UIViewExtensionBean.m */,
 				F8AC3E601589D35500D8A9C9 /* UIViewExtensionManager.h */,
 				F8AC3E611589D35500D8A9C9 /* UIViewExtensionManager.m */,
+				F8AC3ED31589F21000D8A9C9 /* UIViewController+Network.h */,
+				F8AC3ED41589F21000D8A9C9 /* UIViewController+Network.m */,
 			);
 			path = ecui;
 			sourceTree = "<group>";
@@ -357,6 +365,12 @@
 				F8AC3EC11589D3D600D8A9C9 /* UserBean.h in Headers */,
 				F8AC3EC21589D3D600D8A9C9 /* UserManager.h in Headers */,
 				F8AC3EC31589D3D600D8A9C9 /* ECTimeUtil.h in Headers */,
+				F8AC3ED01589ED4700D8A9C9 /* ASICacheDelegate.h in Headers */,
+				F8AC3ECF1589ED3600D8A9C9 /* ASIProgressDelegate.h in Headers */,
+				F8AC3ED51589F21000D8A9C9 /* UIViewController+Network.h in Headers */,
+				F8AC3ECE1589ED1200D8A9C9 /* ASIHTTPRequestDelegate.h in Headers */,
+				F8AC3ECD1589ECED00D8A9C9 /* ASIHTTPRequestConfig.h in Headers */,
+				F8AC3ECC1589EC9100D8A9C9 /* ASIHTTPRequest.h in Headers */,
 				F8AC3EC41589D3D600D8A9C9 /* HttpUtil.h in Headers */,
 				F8AC3EC51589D3D600D8A9C9 /* NSString+CommonUtils.h in Headers */,
 				F8AC3EC61589D3D600D8A9C9 /* UIColor+ECUIColor.h in Headers */,
@@ -426,7 +440,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8AC3E9B1589D35500D8A9C9 /* ectoolkit.m in Sources */,
 				F8AC3E9C1589D35500D8A9C9 /* ECUIControlTableViewCell.m in Sources */,
 				F8AC3E9D1589D35500D8A9C9 /* UIView+UI+ViewController.m in Sources */,
 				F8AC3E9E1589D35500D8A9C9 /* UIViewController+CompatibleView.m in Sources */,
@@ -453,6 +466,7 @@
 				F8AC3EB31589D35500D8A9C9 /* HttpUtil.m in Sources */,
 				F8AC3EB41589D35500D8A9C9 /* NSString+CommonUtils.m in Sources */,
 				F8AC3EB51589D35500D8A9C9 /* UIColor+ECUIColor.m in Sources */,
+				F8AC3ED61589F21000D8A9C9 /* UIViewController+Network.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +495,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = "ectoolkit/ectoolkit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = mh_object;
 				MACOSX_DEPLOYMENT_TARGET = "";
@@ -503,6 +518,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = "ectoolkit/ectoolkit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = mh_object;
 				MACOSX_DEPLOYMENT_TARGET = "";

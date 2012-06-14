@@ -9,6 +9,7 @@
 #import "HttpUtil.h"
 #import "UserManager.h"
 #import "NSString+CommonUtils.h"
+#import "../openSource/ASIHttpRequest/ASIFormDataRequest.h"
 
 @implementation HttpUtil
 
@@ -98,6 +99,27 @@
     }
 }
 
++ (NSDictionary*)parseParamsFromUrl:(NSString*)url {
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] initWithCapacity:10];
+    NSRange range = [url rangeOfString:@"?"];
+    
+    if (url && range.length > 0 && range.location > 0 && range.location != [url length] - 1) {
+        NSString *keyValueStr = [url substringFromIndex:range.location + 1];
+       // NSMutableString *_keyValueStr = [[NSMutableString alloc] initWithUTF8String:[keyValueStr UTF8String]];
+       // [_keyValueStr appendString:@"&"];
+        NSArray *keyValues = [keyValueStr componentsSeparatedByString:@"&"];
+        if (keyValues) {
+            for (NSString *keyValue in keyValues) {
+                NSArray *kv = [keyValue componentsSeparatedByString:@"="];
+                if (kv && kv.count == 2) {
+                    [params setObject:[kv objectAtIndex:1] forKey:[kv objectAtIndex:0]];
+                }
+            }
+        }
+    }
+    return params;
+}
+
 // send sig form request with url
 +(void) sendSigFormRequestWithUrl:(NSString*) pUrl andPostBody:(NSMutableDictionary*) pPostBodyDic andUserInfo:(NSDictionary*) pUserInfo andDelegate:(id) delegate andFinishedRespMethod:(SEL) pFinRespMethod andFailedRespMethod:(SEL) pFailRespMethod andRequestType:(ASIHTTPRequestType) pRequestType {
     // judge request param
@@ -106,6 +128,14 @@
         
         return;
     }
+    
+    if (pPostBodyDic == nil) {
+        pPostBodyDic = [[NSMutableDictionary alloc] initWithCapacity:1];
+    }
+    
+    [pPostBodyDic addEntriesFromDictionary:[HttpUtil parseParamsFromUrl:pUrl]];
+    
+    [pPostBodyDic setObject:[[UserManager shareSingleton] userBean].name forKey:@"username"];
     
     // synchronous request
     ASIFormDataRequest *_request = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:pUrl]];
